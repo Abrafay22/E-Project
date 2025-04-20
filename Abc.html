@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alphabet Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <style>
+        body {
+           
+            font-family: Arial, sans-serif;
+            background-image: url('images/abc\ bg.jpg');
+            background-size: cover;
+        }
+        .container {
+            max-width: 900px;
+            margin-top: 50px;
+        
+        }
+        .grid-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 5%;
+        }
+        .letter {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #4b0150;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1{
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: 5rem ;
+        }
+    
+        h2{
+            color: #000000;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div id="Nav"></div>        
+
+    <div class="container text-center">
+        <h1 class="mb-4 ">Alphabets</h1>
+        
+        <h2 >Capital Letters</h2>
+        <div class="grid-box" id="capital-letters"></div>
+        
+        <h2 class=" mt-4">Small Letters</h2>
+        <div class="grid-box" id="small-letters"></div>
+        
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        const capitalContainer = document.getElementById('capital-letters');
+        const smallContainer = document.getElementById('small-letters');
+        
+        const capitalLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const smallLetters = 'abcdefghijklmnopqrstuvwxyz';
+        
+        capitalLetters.split('').forEach(letter => {
+            const div = document.createElement('div');
+            div.className = 'letter';
+            div.textContent = letter;
+            capitalContainer.appendChild(div);
+        });
+        
+        smallLetters.split('').forEach(letter => {
+            const div = document.createElement('div');
+            div.className = 'letter';
+            div.textContent = letter;
+            smallContainer.appendChild(div);
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Javascript/footer.js"></script>
+    <script src="Javascript/nav.js"></script>
+</body>
+</html>

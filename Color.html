@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Colors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <style>
+        body{
+            background-image: url('images/color.jpg');
+            background-size: cover;
+        }
+        .color-box {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin: 5%;
+        }
+
+        .color-box:hover {
+            transform: translateY(-3px);
+
+        }
+
+        .red { background-color: red; }
+        .green { background-color: green; }
+        .blue { background-color: blue; }
+        .yellow { background-color: yellow; color: black; }
+        .purple { background-color: purple; }
+        .orange { background-color: orange; color: black; }
+        .pink { background-color: pink; color: black; }
+        .gray { background-color: gray; }
+        .black { background-color: black; }
+    </style>
+</head>
+<body>
+    <div id="Nav"></div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 text-white">Basics Colors</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="color-box red">Red</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box green">Green</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box blue">Blue</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box yellow">Yellow</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box purple">Purple</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box orange">Orange</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box pink">Pink</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box gray">Gray</div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-box black">Black</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="Javascript/nav.js"></script>
+    <script src="Javascript/footer.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
